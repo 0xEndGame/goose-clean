@@ -34,6 +34,7 @@ const CakeStats = () => {
 
   let eggPerBlock = 0;
   if(farms && farms[0] && farms[0].eggPerBlock){
+    console.log(farms)
     eggPerBlock = new BigNumber(farms[0].eggPerBlock).div(new BigNumber(10).pow(18)).toNumber();
   }
 
