@@ -8,12 +8,12 @@ const farms: FarmConfig[] = [
     lpSymbol: 'EGG-BUSD LP',
     lpAddresses: {
       97: '',
-      56: '0x19e7cbecdd23a16dfa5573df54d98f7caae03019',
+      56: '0xA8c5e8d0c44a9d25A0fEC5267880df3951b7Cd12',
     },
     tokenSymbol: 'EGG',
     tokenAddresses: {
       97: '',
-      56: '0xf952fc3ca7325cc27d15885d37117676d25bfda6',
+      56: '0x7C6a6E1329EDE12F859Ac11dAAc462C92Efb38ed',
     },
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
@@ -29,7 +29,7 @@ const farms: FarmConfig[] = [
     tokenSymbol: 'EGG',
     tokenAddresses: {
       97: '',
-      56: '0xf952fc3ca7325cc27d15885d37117676d25bfda6',
+      56: '0x7C6a6E1329EDE12F859Ac11dAAc462C92Efb38ed',
     },
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,
@@ -185,12 +185,12 @@ const farms: FarmConfig[] = [
     lpSymbol: 'EGG',
     lpAddresses: {
       97: '',
-      56: '0x19e7cbecdd23a16dfa5573df54d98f7caae03019', // EGG-BUSD LP
+      56: '0xA8c5e8d0c44a9d25A0fEC5267880df3951b7Cd12', // EGG-BUSD LP
     },
     tokenSymbol: 'EGG',
     tokenAddresses: {
       97: '',
-      56: '0xf952fc3ca7325cc27d15885d37117676d25bfda6',
+      56: '0x7C6a6E1329EDE12F859Ac11dAAc462C92Efb38ed',
     },
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
@@ -202,7 +202,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'BUSD',
     lpAddresses: {
       97: '',
-      56: '0x19e7cbecdd23a16dfa5573df54d98f7caae03019', // EGG-BUSD LP (BUSD-BUSD will ignore)
+      56: '0xA8c5e8d0c44a9d25A0fEC5267880df3951b7Cd12', // EGG-BUSD LP (BUSD-BUSD will ignore)
     },
     tokenSymbol: 'BUSD',
     tokenAddresses: {
