@@ -38,7 +38,7 @@ const config: MenuEntry[] = [
    {
      label: 'Wheel',
      icon: 'TicketIcon',
-     href: '/wheel',
+     href: '/lottery',
 / },
   // {
   //   label: 'NFT',
