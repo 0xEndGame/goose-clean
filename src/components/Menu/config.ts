@@ -30,16 +30,16 @@ const config: MenuEntry[] = [
     icon: 'PoolIcon',
     href: '/nests',
   },
-  // {
-  //   label: 'Pools',
-  //   icon: 'PoolIcon',
-  //   href: '/pools',
-  // },
-  // {
-  //   label: 'Lottery',
-  //   icon: 'TicketIcon',
-  //   href: '/lottery',
-  // },
+   {
+     label: 'Pools',
+     icon: 'PoolIcon',
+     href: '/pools',
+   },
+   {
+     label: 'Wheel',
+     icon: 'TicketIcon',
+     href: '/wheel',
+/ },
   // {
   //   label: 'NFT',
   //   icon: 'NftIcon',
