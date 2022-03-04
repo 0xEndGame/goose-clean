@@ -8,7 +8,7 @@ import { getTokenBalance, getNftBalance } from 'utils/erc20'
 import { getCakeAddress } from 'utils/addressHelpers'
 import useRefresh from './useRefresh'
 
-const useTokenBalance = (tokenAddress: string) => {
+export const useTokenBalance = (tokenAddress: string) => {
   const [balance, setBalance] = useState(new BigNumber(0))
   const { account, ethereum }: { account: string; ethereum: provider } = useWallet()
   const { fastRefresh } = useRefresh()
@@ -27,7 +27,7 @@ const useTokenBalance = (tokenAddress: string) => {
   return balance
 }
 
-const useNftBalance = (nftAddress: string) => {
+export const useNftBalance = (nftAddress: string) => {
   const [balance, setBalance] = useState(new BigNumber(0))
   const { account, ethereum }: { account: string; ethereum: provider } = useWallet()
   const { fastRefresh } = useRefresh()
