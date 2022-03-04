@@ -80,4 +80,4 @@ export const useBurnedBalance = (tokenAddress: string) => {
   return balance
 }
 
-export default useTokenBalance
+
