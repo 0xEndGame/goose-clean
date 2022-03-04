@@ -36,3 +36,17 @@ export const getTokenBalance = async (
     return '0'
   }
 }
+
+export const getNftBalance = async (
+  provider: ProviderType,
+  nftAddress: string,
+  userAddress: string,
+): Promise<string> => {
+  const contract = getContract(provider, nftAddress)
+  try {
+    const balance: string = await contract.methods.balanceOf(userAddress).call()
+    return balance
+  } catch (e) {
+    return '0'
+  }
+}

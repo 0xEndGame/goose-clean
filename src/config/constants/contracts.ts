@@ -27,4 +27,8 @@ export default {
     56: '0xe9e7cea3dedca5984780bafc599bd69add087d56',
     97: '',
   },
+  nft: {
+    56:'0x11304895f41C5A9b7fBFb0C4B011A92f1020EF96',
+    97:'',
+  },
 }

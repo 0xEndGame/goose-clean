@@ -11,7 +11,9 @@ import CakeHarvestBalance from './CakeHarvestBalance'
 import CakeWalletBalance from './CakeWalletBalance'
 import { usePriceCakeBusd } from '../../../state/hooks'
 import useTokenBalance from '../../../hooks/useTokenBalance'
+import useNftBalance from '../../../hooks/useTokenBalance'
 import { getCakeAddress } from '../../../utils/addressHelpers'
+import { getNftAddress } from '../../../utils/addressHelpers'
 import useAllEarnings from '../../../hooks/useAllEarnings'
 import { getBalanceNumber } from '../../../utils/formatBalance'
 
@@ -45,6 +47,7 @@ const FarmedStakingCard = () => {
   const TranslateString = useI18n()
   const farmsWithBalance = useFarmsWithBalance()
   const cakeBalance = getBalanceNumber(useTokenBalance(getCakeAddress()))
+  const nftBalance = getBalanceNumber(useNftBalance(getNftAddress()))
   const eggPrice = usePriceCakeBusd().toNumber()
   const allEarnings = useAllEarnings()
   const earningsSum = allEarnings.reduce((accum, earning) => {
@@ -81,6 +84,11 @@ const FarmedStakingCard = () => {
           <Label>{TranslateString(546, 'EGG in Wallet')}</Label>
           <CakeWalletBalance cakeBalance={cakeBalance} />
           <Label>~${(eggPrice * cakeBalance).toFixed(2)}</Label>
+        </Block>
+        <Block>
+        <Label>{TranslateString(546, 'EGG in Wallet')}</Label>
+        <CakeWalletBalance cakeBalance={nftBalance} />
+        <Label>~${(cakeBalance).toFixed(2)}</Label>
         </Block>
         <Actions>
           {account ? (
